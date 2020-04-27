@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<!--
+  Phantom by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  
+  found through
+  https://github.com/neutraltone/Awesome-Stock-Resources#html-templates 
+-->
+<html>
+  <head>
+    <title>The Spacebar Challenge</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/popup.css" />
+    <link rel="stylesheet" href="static/css/modal.css" />
+
+    <noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+      <div id="wrapper">
+
+          <!-- Main -->
+          <div id="main">
+            <div class="inner">
+              <h1>The $3 Spacebar Challenge</h1>
+            
+              <p>Welcome to our experiment! We are graduate students at UC Berkeley <a href="https://www.linkedin.com/in/isaac-chau/">(LinkedIn profile of yours truly)</a> running an experiment with the goal of collecting spacebar clicks from internet users. If you're reading this, <b>we would like to give you $3 to donate to any charitable organization of your choice.</b> All you have to do to earn this reward is click your computer's spacebar <b>400</b> times. I know it sounds like a lot, but give it a shot and watch how fast those clicks rack up! A popup will appear when you have reached the target number of clicks. </p> 
+
+              <p> <b>Please do not refresh the page. </b> </p>
+              
+              <form action="PHP_forCH.php" method="POST" />
+
+                <input type="hidden" name="total_clicks" id="total_clicks" value="" />
+                <input type="hidden" name="formattedTime" id="run_time" value="" />
+                <input type="hidden" name="timestmp" id="time_now" value="" />
+
+                <div id='countbox' class='inner' style="text-align:center;margin:0 auto;width:50%;padding:5px;">
+                  
+                  <!-- old click button -->
+                  <!-- <button type="button" onClick="onClick()">Click me</button> -->
+                  
+                  <p style="font-size:xx-large;">Click Count: <b><a id="clicks">0</a></b></p>
+                  <!-- <input type="submit" value="Finish" /> this was for before we had the popup modal-->
+                
+                  <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content" style="text-align:left">
+                    
+                      <h2>Thank you for completing our experiment!</h2>
+                      <p>Please enter your email, the name of whatever charity you'd like to give money to, and the charity's website! At the conclusion of this experiment in April, we will email you a receipt for the $3 donation to be made under your name.</p> 
+                      <b>Please do not repeat or share this experiment with anybody.</b> 
+                      <p>Due to the nature of our experiment, our results will be ruined if you repeat the experiment or have a friend take it. If we detect that you have shared this page or repeated the experiment, we will cancel your reward. We would appreciate if you would help us get a good grade in our statistics class! :) </p>
+                      
+                      <div class="fields">
+                        
+                        <div class="field half">
+                          <input type="email" name="email" id="email" placeholder="Email" />
+                        </div>
+
+                        <div class="field">
+                          <textarea type="name" name="person_name" id="name" placeholder="Name for the donation to be made under (optional)"></textarea>
+                        </div>
+
+                        <div class="field">
+                          <textarea name="charity_name" id="charity_name" placeholder="Charity Name (Leave blank if you want to buy us a beer instead)"></textarea>
+                        </div>
+
+                        <div class="field">
+                          <textarea name="charity_website" id="charity_website" placeholder="Charity Website URL"></textarea>
+                        </div>
+                      
+                      </div>
+
+                      <ul class="actions">
+                        <li><input type="submit" value="Submit" /></li>
+                      </ul>
+              
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <!-- modal script -->
+              <script>
+              // Get the modal
+              var modal = document.getElementById("myModal");
+
+              // Get the button that opens the modal
+              var btn = document.getElementById("myBtn");
+
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[0];
+
+              // // When the user clicks the button, open the modal 
+              // btn.onclick = function() {
+              //   modal.style.display = "block";
+              // }
+
+              // // When the user clicks on <span> (x), close the modal
+              // span.onclick = function() {
+              //   modal.style.display = "none";
+              // }
+
+              // // When the user clicks anywhere outside of the modal, close it
+              // window.onclick = function(event) {
+              //   if (event.target == modal) {
+              //     modal.style.display = "none";
+              //   }
+              // }
+              </script>
+
+                <p>There's no catch -- all you have to do is click the spacebar! We will not collect any personal information from you unless you complete the challenge, but that's only so we can process and confirm your reward. </p>
+
+                <p>Once you reach 400 clicks, a box will appear for you to input your email address and information so that we can process the $3 reward. If you complete the form, we will send you a confirmation email, and we'll process the reward by no later than May 1st, 2020.
+
+                We'll be doing all the emailing and payments by hand, so thank you for your patience!</p>
+            </div>
+          </div>
+
+        <!-- Footer -->
+          <footer id="footer">
+            <div class="inner">
+              <section>
+                <!-- <h2>Questions? Leave us a message</h2>
+                <form method="post" action="#">
+                  <div class="fields">
+                    <div class="field half">
+                      <input type="text" name="name" id="name" placeholder="Name" />
+                    </div>
+                    <div class="field half">
+                      <input type="email" name="email" id="email" placeholder="Email" />
+                    </div>
+                    <div class="field">
+                      <textarea name="message" id="message" placeholder="Message"></textarea>
+                    </div>
+                  </div>
+                  <ul class="actions">
+                    <li><input type="submit" value="Send" class="primary" /></li>
+                  </ul>
+                </form>
+              </section>
+              <section> -->
+                <ul class="icons">
+                  <li><a href="https://www.linkedin.com/in/isaac-chau/" class="fab fa-linkedin fa-3x"><span class="label"></span></a></li>
+                </ul>
+              </section>
+              <ul class="copyright">
+                <li>&copy; 2020 Isaac C., Emma R., and JJ S. All rights reserved</li><li>Website template by: <a href="http://html5up.net">HTML5 UP</a></li>
+              </ul>
+            </div>
+          </footer>
+
+      </div>
+
+    <!-- Scripts -->
+      <script src="static/js/jquery.min.js"></script>
+      <script src="static/js/browser.min.js"></script>
+      <script src="static/js/breakpoints.min.js"></script>
+      <script src="static/js/util.js"></script>
+      <script src="static/js/main.js"></script>
+      <script src="static/js/jquery.js"></script>
+      <script src="static/js/functions.js"></script>
+      <script src="static/js/ext_CH.js"></script>
+
+  </body>
+</html>
